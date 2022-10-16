@@ -2,32 +2,53 @@
 <html lang="en">
   <head>
     <title>Quote Calender</title>
+    <link
+      rel="shortcut icon"
+      href="../Img/front-end-favicon.jpg"
+      type="image/jpg"
+    />
     <!-- Required meta tags -->
+
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-    rel="stylesheet"
-    href="../Front-End-Portfolio/Calender.css"
-  />
+    <link rel="stylesheet" href="../Front-End-Portfolio/Calender.css" />
   </head>
 
   <body>
+    <table class="table-1">
+      <tbody>
+        <tr>
+          <th class="clock-top" id="title-clock" colspan="3">Current Time:</th>
+        </tr>
+        <tr>
+          <td colspan="3"class="tr-2">
+              Daniel j. hill's portfolio for success in web development!
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h1 class="title-1" id="title-clock">Current Time:</h1>
-<div id="app-calender"></div>  
+  <nav>
+    <ul class="navbar">
+      <li><a href="#Home">Top of Page</a></li>
+      <li><a href="#Certs">Certifications</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li class="navbar-right"><a href="#Contact">Contact Me</a></li>
+      <li class="navbar-right"><a href="#About">About the Author</a></li>
+    <li class="dropdownicon"><a href="">	
+      &#9776;</a></li>
+    </ul>
+  </nav>
 
-<script src="../Front-End-Portfolio/Calender.js"></script>
-</body>
+  <div class="Project-section">
+    <div id="app-calender"></div>
+</div>
+    
+
+    <script src="../Front-End-Portfolio/Calender.js"></script>
+  </body>
 </html>
