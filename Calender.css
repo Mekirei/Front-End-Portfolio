@@ -1,46 +1,136 @@
+html {
+  display: initial;
+}
+
 :root {
-    --light-gray: #dadce0;
-    --light-blue: #1B9CE2;
+  --light-gray: #c1c2c5;
+  --light-blue: #1b9ce2;
 }
 
 body {
-    background-color:white;
-    margin: 0;
+  background-color: white;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.title-1 {
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.247);
-    background-color: rgba(128, 128, 128, 0.418);
+
+/*          */
+/*            */
+/*              */
+/* Navbar styling */
+/*              */
+/*            */
+/*          */
+
+
+nav {
+width: 100%;
+margin: 0;
 }
+
+nav ul {
+  background-color: #eee;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+ul.navbar li{
+  list-style: none;
+  float: left;
+}
+
+ul.navbar li.navbar-right {
+  float: right;
+}
+
+ul.navbar li a {
+  display:block;
+  text-decoration:none;
+  min-height: 20px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+ul.navbar li a:hover {
+  background-color: #0080ff;
+  color:#fff;
+}
+ul.navbar li.dropdownicon {
+display: none;  
+}
+
+
+/*           */
+/*            */
+/* Media query */
+/*            */
+/*          */
+
+@media screen and (max-width:690px) {
+  ul.navbar li:not(:nth-child(1)) {
+    display: none;
+  }
+
+
+
+}
+
+
+
+/*                 */
+/*                  */
+/* Top table stylings */
+/*                  */
+/*                */
+
+
+.clock-top {
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.247);
+  background-color: rgba(128, 128, 128, 0.418);
+  margin: 0;
+  font-size: 3vmin;
+}
+
+.table-1 {
+  border: 1px solid black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 100%;
+}
+
+.tr-2{
+  border: 1px solid black;
+  padding-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/*                   */
+/*                   */
+/*                   */
+/* calender styling  */
+/*                  */
+/*                 */
 
 #app-calender {
-    display:
-    grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vmin;
+  margin: 10px;
+  scale: 80%;
 }
 
 .day {
-    border-bottom: 1px solid var(--light-gray);
-    border-right: 1px solid var(--light-gray);
-    text-align: center;
-    padding-top: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 200ms, color 200ms;
+  border: 2px solid var(--light-gray);
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 5px;
+  font-size: 4vmin;
 }
 
-.name {
-    padding-bottom: 5px;
-}
-
-.weekend {
-    color: var(--light-blue);
-}
-
-.selected {
-    background-color: var(--light-gray);
-    color:white;
+.day:hover {
+  background-color: #eee;
 }
