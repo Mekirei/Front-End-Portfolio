@@ -4,7 +4,11 @@
 }
 
 body {
+<<<<<<< HEAD
     background-color: rgba(93, 141, 231, 0.575);
+=======
+    background-color:white;
+>>>>>>> f8e7a3fef4c03dde5844b42be37e13be99fe17ea
     margin: 0;
 }
 
@@ -15,7 +19,15 @@ body {
 }
 
 #app-calender {
+<<<<<<< HEAD
 display:grid;
+=======
+    display:
+    grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vmin;
+>>>>>>> f8e7a3fef4c03dde5844b42be37e13be99fe17ea
 }
 
 .day {
