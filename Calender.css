@@ -123,7 +123,7 @@ display: none;
   scale: 80%;
 }
 
-.day {
+  .day {
   border: 2px solid var(--light-gray);
   text-align: center;
   text-decoration: underline;
